@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">index</a>
+    <p>11. 给定任意一个数字数组和目标值 target, 
+        找出数组两个元素之和等于 target 的下标数组</p>
+</body>
+<script>
+    var arr = [1,2,3,4];
+    var target = 1;
+    var flag =false;
+    for (var i=0;i<arr.length;i++){
+        var a = target-arr[i];
+       
+        for(j=0;j<arr.length&&j!==i;j++){
+            if(a===arr[j]){
+                console.log(i,j);
+                var flag = true;
+            }
+           
+        }
+        
+    }
+    if(!flag){
+            console.log(null);
+        }
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">首页</a>
+    # 2. 请编写一段逻辑判断任意一个字符串是否是回文（即正读和反读都相同）。
+</body>
+<script>
+    var str = "123321";
+    var str1 ="";
+    for (var  i=str.length-1;i>=0;i--){
+        str1+=str[i];
+    }
+    for (j=0;j<str1.length;j++){
+        var flag = true;
+        for (n=j;n<str.length;n++){
+            if(str[n]!==str1[j]){
+                var flag = false;
+                break;
+            }
+        }
+    }
+    if(flag){
+            console.log(flag);
+        }else{
+            console.log(flag);
+        }
+    
+    console.log(str1);
+    
+</script>
+</html>

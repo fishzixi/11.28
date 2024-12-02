@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">index</a>
+    <p># 4. 请编写一段逻辑生成一个长度为 15 的斐波那契数列的数组([1,1,2,3,5,8...])</p>
+</body>
+<script>
+    var arr=[];
+    var a=1;
+    var b =1;
+    for(i=0;i<15;i++){
+        var sum = 0;
+        if (i<=1){
+            arr.push(1);
+        }else{
+            sum=a+b;
+            arr.push(sum);
+            a=b;
+            b=sum;
+        }
+    }
+    console.log(arr);
+</script>
+</html>

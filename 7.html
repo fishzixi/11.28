@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">index</a>
+    <p># 7. 请编写一段逻辑将包含嵌套数组
+        的数组处理后返回一个新数组，其中所有元素都被扁平化到同一层级。</p>
+</body>
+<script>
+    var arr =[1,2,3,4,[3,4,[3,4]],[5,2],1,2];
+   
+    var arr1=[];
+    for(i=0;i<arr.length;i++){
+        var item = arr[i];
+        if(typeof item==="number"){
+            arr1.push(item);
+        }else{
+            for(j=0;j<item.length;j++){
+                arr.push(item[j]);
+                
+            }
+        }
+    }
+    console.log(arr1);
+</script>
+</html>

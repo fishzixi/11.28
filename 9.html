@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html"></a>
+        <p># 9. 请编写一段逻辑将一个数字数组处理返回一个新数组，
+            其中元素按升序排列。
+
+        例子: [11,3,8,1,7] => [1,3,7,8,11]</p>
+</body>
+<script>
+    var arr = [2,3,8,1,7];
+    var arr1 = [];
+    var max =0;
+    // for(i=0;i<arr.length;i++){
+    //     if(max<arr[i]){
+    //         max=arr[i];
+    //         arr1.push(arr[i]);
+    //         console.log(arr1);
+    //         for (j=0;j<arr1.length;j++){
+    //             if(arr[i]<arr1[j]){
+    //                 arr1.splice(j-1,0,arr[i]);
+    //                 console.log(arr1);
+    //             }
+    //         }
+    //     }else{
+    //         arr1.unshift(arr[i]);
+            
+    //     }
+        
+    // }
+    
+    // console.log(arr1);
+    //max=0;
+    //11>0 ;max=11;
+    //3<11;左边 3  11
+    //8<11; 8  3 11  在arr1里面，把新的和所有旧的比较，看他大于谁就放在谁的右边
+    //
+</script>
+</html>

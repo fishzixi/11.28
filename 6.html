@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">index</a>
+    <p># 6. 请编写一段逻辑可以实现字符串中的单词计数（假设单词之间由空格分隔）。</p>
+
+</body>
+<script>
+    var str = "how are you";
+    // var arr = str.split(" ");
+    // console.log("单词数为："+arr.length);
+    var count = 1;
+    for (i=0;i<str.length;i++){
+        if(str[i]===" "){
+            count++;
+        }
+    }
+    console.log("单词数为："+count);
+
+</script>
+</html>
